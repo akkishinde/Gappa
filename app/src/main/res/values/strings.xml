@@ -3,4 +3,9 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="btnSignIn">Sign In</string>
+    <string name="textEmailid">Email ID</string>
+    <string name="textPassword">Password</string>
+    <string name="descImageView">Gappa Logo</string>
+    <string name="registerHere_text">Dont have an Account? Register Here</string>
 </resources>
