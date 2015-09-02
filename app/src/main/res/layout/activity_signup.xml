@@ -7,66 +7,67 @@
     >
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/editText"
-        android:layout_centerVertical="true"
         android:textColor="#9c27b0"
         android:hint="@string/hintEmailid"
         android:textColorHint="#9c27b0"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_below="@+id/editText3"
+        android:layout_alignParentStart="true">
+
+    </EditText>
+
+
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/editText"
         android:textColor="#9c27b0"
         android:hint="@string/hintPassword"
         android:textColorHint="#9c27b0"
-        android:layout_alignParentEnd="true"
         android:gravity="center_vertical"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnSignIn"
+        android:text="@string/btnSignUp"
         android:id="@+id/button"
-        android:layout_below="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2"
         android:background="#9c27b0"
         android:textColor="#e0e0e0"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:id="@+id/imageView"
-        android:layout_above="@+id/editText"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/gappa_text"
-        android:contentDescription="@string/descImageView" />
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/registerHere_text"
-        android:id="@+id/register_here"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="55dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/gappa_text"
+        android:contentDescription="@string/descImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText3"
         android:textColor="#9c27b0"
-        android:textSize="20sp"/>
+        android:hint="@string/hintUserId"
+        android:textColorHint="#9c27b0"
+        android:textAlignment="center"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
